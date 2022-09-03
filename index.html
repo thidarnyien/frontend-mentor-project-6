@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        height: 100vh;
+        background-color: hsl(233, 47%, 7%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+      }
+      .card{
+        width: 70%;
+        background-color: hsl(244, 38%, 16%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 7px;
+      }
+     
+      h1,h3{
+        font-family: 'Inter', sans-serif;
+        color: hsl(0, 0%, 100%);
+      }
+      h1>span{
+        color: hsl(277, 64%, 61%);
+      }
+
+      .text>p{
+       padding-top: 20px;
+      }
+      section{
+        width: 50%;
+        height: 60vh;
+        overflow: hidden;
+      }
+      .body-text{
+        padding: 7% ;
+        padding-right: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      footer{
+        display: flex;
+        justify-content: space-between;
+      }
+      footer div> p{
+          color: hsla(0, 0%, 100%, 0.6);
+      }
+      .img{
+        background: linear-gradient(hsla(277, 64%, 61%,.5),hsla(277, 64%, 61%,.5)), url(./images/image-header-desktop.jpg) no-repeat center;
+        background-size: cover;
+      }
+      @media(max-width:768px){
+        .card{
+          width: 80%;
+        }
+        .body-text{
+          padding: 20px;
+        }
+      }
+      @media(max-width:500px){
+        .card{
+          width: 80%;
+          flex-direction: column;
+        }
+        .body-text{
+          padding: 20px;
+        }
+        section{
+          width: 100%;
+          height: 100vh;
+        }
+      }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <section class="body-text">
+      <div class="text">
+        <h1>Get <span>insights</span> that help your business grow.</h1>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.
+        </p>
+      </div>
+      <footer>
+        <div><h3>10k+</h3> <p>companies</p></div>
+        <div><h3>314</h3> <p>templates</p></div>
+        <div><h3>12M+</h3> <p>queries</p></div>
+      </footer>
+    </section>
+    <section class="img">
+      <!-- <img src="./images/image-header-desktop.jpg" alt=""> -->
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/thidarnyien">Thidar Nyein</a>.
+  </div>
+</body>
+</html>
